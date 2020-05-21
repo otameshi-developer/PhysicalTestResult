@@ -1,0 +1,23 @@
+{
+	"user001": {
+		"user_name": "田中A太",
+		"sit_ups": 20,
+		"run_50m": 8.5,
+		"grip": 33,
+		"student_number": 1
+	},
+	"user002": {
+		"user_name": "佐藤B子",
+		"sit_ups": 10,
+		"run_50m": 9.3,
+		"grip": 16,
+		"student_number": 2
+	},
+	"user003": {
+		"user_name": "鈴木C也",
+		"sit_ups": 32,
+		"run_50m": 6.6,
+		"grip": 50,
+		"student_number": 3
+	}
+}
