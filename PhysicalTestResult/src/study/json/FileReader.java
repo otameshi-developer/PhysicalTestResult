@@ -1,5 +1,6 @@
 package study.json;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -25,7 +26,8 @@ public class FileReader {
 		StringBuilder fileData = new StringBuilder();
 
 		Path path = Paths.get(filePath);
-		try (Stream<String> stream = Files.lines(path,  StandardCharsets.UTF_8)) {
+		try (BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
+			Stream<String> stream = reader.lines();
 			stream.forEach(line -> {
 				fileData.append(line);
 			});
